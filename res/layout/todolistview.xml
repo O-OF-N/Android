@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/todoitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/list_text" />
+    <TextView
+         android:id="@+id/todoitemstatuslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todoitemname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+		android:layout_marginLeft="4dp"
+        android:text="@string/list_status_done"  />
+
+    <CheckBox
+        android:id="@+id/todoitemstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todoitemname"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/todoitemstatuslabel" />
+
+    <TextView
+        android:id="@+id/tododate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tododatelabel"
+        android:layout_alignLeft="@+id/todoitemstatus" 
+        android:text="@string/list_date" />
+
+    <TextView
+        android:id="@+id/todotime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tododate"
+        android:layout_alignBottom="@+id/tododate"
+        android:layout_toRightOf="@+id/todoitemname"
+        android:text="@string/list_date" />
+
+    <TextView
+        android:id="@+id/tododatelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/todoitemstatuslabel"
+        android:layout_below="@+id/todoitemstatus"
+        android:text="@string/list_date" />
+
+    <TextView
+        android:id="@+id/todoitemprioritylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/todoitemstatus"
+        android:layout_alignBottom="@+id/todoitemstatus"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/todoitempriority"
+        android:text="@string/list_priority" />
+
+    <TextView
+        android:id="@+id/todoitempriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/todoitemprioritylabel"
+        android:layout_alignBottom="@+id/todoitemprioritylabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="@string/list_priority_low" />
+   
+</RelativeLayout>

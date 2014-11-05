@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">ToDoManager</string>
+    <string name="list_text">To-Do Name:</string>
+    <string name="list_status_done">Done</string>
+    <string name="list_status_notdone">Not Done</string>
+    <string name="list_priority">Priority:</string>
+    <string name="list_priority_low">Low</string>
+    <string name="list_priority_medium">medium</string>
+    <string name="list_priority_high">high</string>
+    <string name="list_date">Date:</string>
+    
+</resources>
